@@ -7,27 +7,81 @@
 
 import Foundation
 struct UserDatasource{
-    func loginByEmail(param : LoginRequest) async throws -> LoginResponse{
-        guard let url = URL(string: "https://drf-boilerplate-2k96.onrender.com/api/auth/login") else { return <#default value#> }
-        var urlRequest =  URLRequest(url: url)
-        urlRequest.httpMethod = "post"
+    
+    func register(param : RegisterRequest, completion: @escaping (Result<Void, CallAPIError>) -> Void ){
+        guard let url = URL(string: "https://drf-boilerplate-2k96.onrender.com/api/auth/register/") else{
+            completion(.failure(.APIRequestFailed))
+            return
+        }
         
-        try await URLSession.shared.dataTask(with: urlRequest, completionHandler: { data,_, error in
-            // unwrap optinals
-            if let data = data {
-                let response = try JSONDecoder().decode(LoginResponse.self, from: data)
-                // unwrap optinals
-                if let response = response{
-                    
-                }else{
-                    // unale to decode to json. Response is nil
-                    
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "POST"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        guard let decodedBody = try? JSONEncoder().encode(param) else{
+            completion(.failure(.EnableToEncode))
+            return
+        }
+        
+        urlRequest.httpBody = decodedBody
+        
+        let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { data, response, error in
+            if let error = error as? NSError{
+                if error.code == NSURLErrorTimedOut{
+                    completion(.failure(.RequestTimeOut))
                 }
-                
-            }else{
-                // api request failed. Data is nil
-                
+            }
+            
+            print((String(describing: data) + " " + String(describing: response)) )
+            if let response = response as? HTTPURLResponse{
+                if (response.statusCode != 201){
+                    completion(.failure(.APIRequestFailed))
+                }
             }
         })
+        
+        task.resume()
+    }
+    
+    func loginByEmail(param : LoginRequest, completion: @escaping (Result<LoginResponse, CallAPIError>) -> Void) {
+        guard let url = URL(string: "https://drf-boilerplate-2k96.onrender.com/api/auth/login/") else {
+            completion(.failure(.APIRequestFailed))
+            return
+        }
+        var urlRequest =  URLRequest(url: url)
+        urlRequest.httpMethod = "POST"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        guard let decodedBody = try? JSONEncoder().encode(param) else{
+            completion(.failure(.EnableToEncode))
+            return
+        }
+        
+        urlRequest.httpBody = decodedBody
+        
+        let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { data, response , error in
+            
+            if let response = response as? HTTPURLResponse{
+                if (response.statusCode != 200){
+                    completion(.failure(.APIRequestFailed))
+                }
+            }
+            
+            guard let data = data else{
+                completion(.failure(.APIRequestFailed))
+                return
+            }
+            
+            print("data: \(String(describing: String(data: data, encoding: .utf8)))")
+            do{
+                let decodedResponse = try JSONDecoder().decode(LoginResponse.self, from: data)
+                completion(.success(decodedResponse))
+            }
+            catch{
+                completion(.failure(.EnableToDecode))
+            }
+            
+        })
+        task.resume()
     }
 }
