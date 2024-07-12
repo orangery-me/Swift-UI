@@ -34,8 +34,7 @@ struct SettingView: View {
                 Divider()
                 if isAccountTab {
                     ProfileView()
-                }
-                else {
+                } else {
                     UsersView()
                 }
                 Spacer()
@@ -47,34 +46,34 @@ struct SettingView: View {
 }
 
 struct UsersView: View {
-    @State var isRoleAdmin: Bool = false
-
-    var users: [String] = ["Thi", "Thanh", "Thao", "Tram", "Trong"]
-    var options: [DropdownOption] = [
-        DropdownOption(key: "user", val: "User"),
-        DropdownOption(key: "admin", val: "Admin")
-    ]
-    func onSelect(_ option: String) {
-        print("click")
-    }
+    @ObservedObject var settingVM: SettingViewModel = .init()
 
     var body: some View {
-        List(users, id: \.self) { user in
-            HStack {
-                Image(systemName: "person")
-                VStack(alignment: .leading) {
-                    Text(user)
-                    Text("hi@example.com").font(.custom("body", size: 14))
+        Group {
+            if settingVM.isLoading {
+                ProgressView()
+            } else {
+                List(settingVM.users) { user in
+                    HStack {
+                        Image(systemName: "person")
+                        VStack(alignment: .leading) {
+                            Text(user.name)
+                            Text(user.email).font(.custom("body", size: 14))
+                        }
+                        Spacer()
+                    }
                 }
-                Spacer()
+            }
+        }.onAppear {
+            Task {
+                await settingVM.getUsers()
             }
         }
     }
 }
 
 struct ProfileView: View {
-    @State var email: String = ""
-    @State var name: String = ""
+    @ObservedObject var settingVM: SettingViewModel = .init()
 
     var body: some View {
         VStack {
@@ -86,17 +85,21 @@ struct ProfileView: View {
             }.padding()
             VStack(alignment: .leading) {
                 Text("Name")
-                TextField("Ed Sheeran", text: $name)
+                TextField("Ed Sheeran", text: $settingVM.myUser.name)
                     .padding()
                     .background(.black.opacity(0.1))
                     .cornerRadius(8)
             }
             VStack(alignment: .leading) {
                 Text("Email")
-                TextField("email@example.com", text: $email)
+                TextField("email@example.com", text: $settingVM.myUser.email)
                     .padding()
                     .background(.black.opacity(0.1))
                     .cornerRadius(8)
+            }
+        }.onAppear {
+            Task {
+                await settingVM.getMyUser()
             }
         }
     }

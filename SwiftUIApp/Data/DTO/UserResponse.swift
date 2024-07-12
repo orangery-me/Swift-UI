@@ -7,23 +7,16 @@
 
 import Foundation
 
-struct UserResponse: Codable {
+struct UserResponse: Codable, Identifiable {
     var id: Int
     var name: String
     var email: String
     var role: Role
 
-    init(id: Int, name: String, email: String, role: Role) {
+    init(id: Int = 0, name: String = "Chau Thi", email: String = "thi@gmail.com", role: Role = Role()) {
         self.id = id
         self.name = name
         self.email = email
         self.role = role
     }
-
-    init() {
-        self.id = 0
-        self.name = ""
-        self.email = ""
-        self.role = .defaultRole
-    }`
 }

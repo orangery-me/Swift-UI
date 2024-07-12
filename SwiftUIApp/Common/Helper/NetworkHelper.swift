@@ -37,7 +37,7 @@ enum NetworkHelper {
         var urlRequest = URLRequest(url: urlComponents.url!)
 
         if let token = AuthService.share.getAccessToken() {
-            urlRequest.addValue(token, forHTTPHeaderField: "Authorization")
+            urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         }
 
         let (data, response) = try await URLSession.shared.data(for: urlRequest)

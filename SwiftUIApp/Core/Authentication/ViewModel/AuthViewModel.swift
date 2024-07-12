@@ -22,7 +22,6 @@ class AuthViewModel: ObservableObject {
         }
         UserDatasource().register(
             param: RegisterRequest(name: name, email: email, role: 1, password: password),
-            path: "https://drf-boilerplate-2k96.onrender.com/api/auth/register/",
             completion: { [weak self] result in
                 DispatchQueue.main.async {
                     switch result {
