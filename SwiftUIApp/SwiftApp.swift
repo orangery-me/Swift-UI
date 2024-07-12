@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SwiftApp: App {
+    @StateObject private var authservice: AuthService = .share
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView().environmentObject(authservice)
         }
     }
 }

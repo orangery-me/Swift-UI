@@ -96,6 +96,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "SwiftUI"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "D3C96499-34A9-4F65-8591-4CF59670E79B"
-   type = "1"
+   uuid = "79C32AEE-D200-4A22-8B43-9273F3383D67"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7C28B1CA-B947-4CDC-88A6-B69C9CBDFE35"
+            uuid = "1A33DB23-85D1-435A-B903-A6C738BFBE52"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftUIApp/Data/Datasource/UserDatasource.swift"
+            filePath = "SwiftUIApp/Common/Helper/KeyChainStorage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "login(param:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "9"
+            endingLineNumber = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
