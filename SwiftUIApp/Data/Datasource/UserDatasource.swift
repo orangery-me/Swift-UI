@@ -72,7 +72,7 @@ struct UserDatasource {
         }
     }
     
-    func getUsers(completion: @escaping (Result<UserList, NetworkError>) -> Void) async {
+    func getUsers(completion: @escaping (Result<UsersPerPage, NetworkError>) -> Void) async {
         let path = Endpoints.getEndpoint(.users(.users_list))
         do {
             try await NetworkHelper.get(path: path, params: ["limit": "10", "offset": "0"]) { data, response in
@@ -83,7 +83,7 @@ struct UserDatasource {
                 }
                 print("data: \(String(describing: String(data: data!, encoding: .utf8)))")
                 do {
-                    let decodedResponse = try JSONDecoder().decode(UserList.self, from: data!)
+                    let decodedResponse = try JSONDecoder().decode(UsersPerPage.self, from: data!)
                     completion(.success(decodedResponse))
                 }
                 catch {

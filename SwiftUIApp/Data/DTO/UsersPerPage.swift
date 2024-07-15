@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserList: Decodable {
+struct UsersPerPage: Decodable {
     var next: String?
     var previous: String?
     var results: [UserResponse]

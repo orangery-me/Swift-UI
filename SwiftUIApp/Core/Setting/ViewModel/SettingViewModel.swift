@@ -18,6 +18,7 @@ class SettingViewModel: ObservableObject {
             guard let self = self else { return }
             DispatchQueue.main.async {
                 switch result {
+                        
                     case .success(let response):
                         self.myUser = response
                     case .failure(let error):

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SwiftKeychainWrapper
+import SimpleKeychain
 
 private enum KeychainKeys {
     static let accessToken: String = "User.accessToken"
@@ -20,6 +20,7 @@ struct Credential {
 
 final class AuthService: ObservableObject {
     @Published var isLogged: Bool = false
+    let simpleKeyChain: SimpleKeychain = .init(service: "Auth")
     static let share = AuthService()
 
     private init() {
@@ -27,15 +28,26 @@ final class AuthService: ObservableObject {
     }
 
     func getCredentials() -> Credential {
-        return Credential(
-            accessToken: KeychainWrapper.standard.string(forKey: KeychainKeys.accessToken),
-            refreshToken: KeychainWrapper.standard.string(forKey: KeychainKeys.accessToken)
-        )
+        do {
+            let accessToken = try simpleKeyChain.string(forKey: KeychainKeys.accessToken)
+            let refreshToken = try simpleKeyChain.string(forKey: KeychainKeys.refreshToken)
+            return Credential(
+                accessToken: accessToken,
+                refreshToken: refreshToken
+            )
+        } catch {
+            print(error)
+            return Credential()
+        }
     }
 
     func setCredentials(accessToken: String, refreshToken: String) {
-        KeychainWrapper.standard.set(accessToken, forKey: KeychainKeys.accessToken)
-        KeychainWrapper.standard.set(refreshToken, forKey: KeychainKeys.refreshToken)
+        do {
+            try simpleKeyChain.set(accessToken, forKey: KeychainKeys.accessToken)
+            try simpleKeyChain.set(refreshToken, forKey: KeychainKeys.refreshToken)
+        } catch {
+            print(error)
+        }
     }
 
     func getAccessToken() -> String? {
@@ -51,10 +63,14 @@ final class AuthService: ObservableObject {
     }
 
     func logout() {
-        KeychainWrapper.standard.removeObject(forKey: KeychainKeys.accessToken)
-        KeychainWrapper.standard.removeObject(forKey: KeychainKeys.refreshToken)
-        DispatchQueue.main.async {
-            self.isLogged = false
+        do {
+            try simpleKeyChain.deleteItem(forKey: KeychainKeys.accessToken)
+            try simpleKeyChain.deleteItem(forKey: KeychainKeys.refreshToken)
+            DispatchQueue.main.async {
+                self.isLogged = false
+            }
+        } catch {
+            print(error)
         }
     }
 }

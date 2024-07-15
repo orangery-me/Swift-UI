@@ -16,6 +16,32 @@
 		D523EE412C1C09B400C8E8BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523EE402C1C09B400C8E8BC /* LoginView.swift */; };
 		D523EE472C1C155F00C8E8BC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523EE462C1C155F00C8E8BC /* LoginRequest.swift */; };
 		D563303D2C2F166700C47219 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D563303C2C2F166700C47219 /* RoundedButton.swift */; };
+		D58BB99C2C4229F200703517 /* EnvironmentOverrides in Frameworks */ = {isa = PBXBuildFile; productRef = D58BB99B2C4229F200703517 /* EnvironmentOverrides */; };
+		D58BB99F2C422F8100703517 /* SimpleKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = D58BB99E2C422F8100703517 /* SimpleKeychain */; };
+		D58BB9A42C42766700703517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9A32C42766700703517 /* AppDelegate.swift */; };
+		D58BB9A62C42768B00703517 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9A52C42768B00703517 /* SceneDelegate.swift */; };
+		D58BB9A82C42778E00703517 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9A72C42778E00703517 /* AppEnvironment.swift */; };
+		D58BB9AC2C4277FC00703517 /* PushNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9AB2C4277FC00703517 /* PushNotificationHandler.swift */; };
+		D58BB9AE2C42786200703517 /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9AD2C42786200703517 /* DeepLinkHandler.swift */; };
+		D58BB9B12C427F2800703517 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9B02C427F2800703517 /* DependencyInjector.swift */; };
+		D58BB9B32C427F6100703517 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9B22C427F6100703517 /* AppState.swift */; };
+		D58BB9B62C42805A00703517 /* UserPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9B52C42805A00703517 /* UserPermission.swift */; };
+		D58BB9B82C4280A700703517 /* InteractorsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9B72C4280A700703517 /* InteractorsContainer.swift */; };
+		D58BB9BB2C4285B100703517 /* ImageWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9BA2C4285B100703517 /* ImageWebRepository.swift */; };
+		D58BB9BD2C4285CB00703517 /* PushTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9BC2C4285CB00703517 /* PushTokenRepository.swift */; };
+		D58BB9BF2C42860200703517 /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9BE2C42860200703517 /* WebRepository.swift */; };
+		D58BB9C22C42864E00703517 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9C12C42864E00703517 /* APICall.swift */; };
+		D58BB9C42C42C28B00703517 /* LazyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9C32C42C28B00703517 /* LazyList.swift */; };
+		D58BB9C62C42C2C000703517 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9C52C42C2C000703517 /* Store.swift */; };
+		D58BB9C82C42C2E800703517 /* SystemEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9C72C42C2E800703517 /* SystemEventHandler.swift */; };
+		D58BB9CA2C42C35E00703517 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9C92C42C35E00703517 /* CancelBag.swift */; };
+		D58BB9CC2C42C3ED00703517 /* ImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9CB2C42C3ED00703517 /* ImagesService.swift */; };
+		D58BB9CE2C42D80100703517 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9CD2C42D80100703517 /* UserRepository.swift */; };
+		D58BB9D02C42DC1500703517 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9CF2C42DC1500703517 /* Loadable.swift */; };
+		D58BB9D22C42DC7000703517 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9D12C42DC7000703517 /* NetworkingHelpers.swift */; };
+		D58BB9D42C42E4AD00703517 /* RootViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9D32C42E4AD00703517 /* RootViewAppearance.swift */; };
+		D58BB9D62C42E4D900703517 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9D52C42E4D900703517 /* Helpers.swift */; };
+		D58BB9DB2C443BD600703517 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BB9DA2C443BD600703517 /* UserService.swift */; };
 		D5A4B3CB2C3017060095B9C0 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A4B3CA2C3017060095B9C0 /* RegisterRequest.swift */; };
 		D5B5FDDF2C24405400B03134 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B5FDDE2C24405400B03134 /* RegisterView.swift */; };
 		D5B5FDE22C2452AB00B03134 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B5FDE12C2452AB00B03134 /* HomeView.swift */; };
@@ -27,7 +53,7 @@
 		D5BA36AE2C3FF65000305778 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA36AD2C3FF65000305778 /* UserResponse.swift */; };
 		D5BA36B02C3FF67100305778 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA36AF2C3FF67100305778 /* Role.swift */; };
 		D5BA36B32C40474F00305778 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA36B22C40474F00305778 /* SettingViewModel.swift */; };
-		D5BA36B62C4173BF00305778 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA36B52C4173BF00305778 /* UserList.swift */; };
+		D5BA36B62C4173BF00305778 /* UsersPerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA36B52C4173BF00305778 /* UsersPerPage.swift */; };
 		D5E57F682C3C538400F2B44B /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E57F672C3C538400F2B44B /* DropDownButton.swift */; };
 		D5E644AE2C3329F300A19008 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E644AD2C3329F300A19008 /* SettingView.swift */; };
 		D5FBA8472C09C77200DB4DF8 /* SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FBA8462C09C77200DB4DF8 /* SwiftApp.swift */; };
@@ -71,6 +97,31 @@
 		D523EE402C1C09B400C8E8BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D523EE462C1C155F00C8E8BC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		D563303C2C2F166700C47219 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D58BB9A32C42766700703517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D58BB9A52C42768B00703517 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D58BB9A72C42778E00703517 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		D58BB9AB2C4277FC00703517 /* PushNotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationHandler.swift; sourceTree = "<group>"; };
+		D58BB9AD2C42786200703517 /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		D58BB9B02C427F2800703517 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		D58BB9B22C427F6100703517 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D58BB9B52C42805A00703517 /* UserPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermission.swift; sourceTree = "<group>"; };
+		D58BB9B72C4280A700703517 /* InteractorsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorsContainer.swift; sourceTree = "<group>"; };
+		D58BB9BA2C4285B100703517 /* ImageWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebRepository.swift; sourceTree = "<group>"; };
+		D58BB9BC2C4285CB00703517 /* PushTokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTokenRepository.swift; sourceTree = "<group>"; };
+		D58BB9BE2C42860200703517 /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
+		D58BB9C12C42864E00703517 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		D58BB9C32C42C28B00703517 /* LazyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyList.swift; sourceTree = "<group>"; };
+		D58BB9C52C42C2C000703517 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D58BB9C72C42C2E800703517 /* SystemEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventHandler.swift; sourceTree = "<group>"; };
+		D58BB9C92C42C35E00703517 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		D58BB9CB2C42C3ED00703517 /* ImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesService.swift; sourceTree = "<group>"; };
+		D58BB9CD2C42D80100703517 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		D58BB9CF2C42DC1500703517 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		D58BB9D12C42DC7000703517 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		D58BB9D32C42E4AD00703517 /* RootViewAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewAppearance.swift; sourceTree = "<group>"; };
+		D58BB9D52C42E4D900703517 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		D58BB9D72C43717600703517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D58BB9DA2C443BD600703517 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D5A4B3CA2C3017060095B9C0 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		D5B5FDDE2C24405400B03134 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D5B5FDE12C2452AB00B03134 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -82,7 +133,7 @@
 		D5BA36AD2C3FF65000305778 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		D5BA36AF2C3FF67100305778 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		D5BA36B22C40474F00305778 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
-		D5BA36B52C4173BF00305778 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		D5BA36B52C4173BF00305778 /* UsersPerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPerPage.swift; sourceTree = "<group>"; };
 		D5E57F672C3C538400F2B44B /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
 		D5E644AD2C3329F300A19008 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		D5FBA8432C09C77200DB4DF8 /* SwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58BB99F2C422F8100703517 /* SimpleKeychain in Frameworks */,
+				D58BB99C2C4229F200703517 /* EnvironmentOverrides in Frameworks */,
 				FF0927085FB53134454B1451 /* Pods_SwiftUIApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +218,7 @@
 				D513F2932C1D33BE00EFAFE7 /* LoginResponse.swift */,
 				D5A4B3CA2C3017060095B9C0 /* RegisterRequest.swift */,
 				D5BA36AD2C3FF65000305778 /* UserResponse.swift */,
-				D5BA36B52C4173BF00305778 /* UserList.swift */,
+				D5BA36B52C4173BF00305778 /* UsersPerPage.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -193,6 +246,7 @@
 				D5BA369B2C3E564800305778 /* Authentication */,
 				D5E644AC2C3329E300A19008 /* Setting */,
 				D5B5FDE02C24529C00B03134 /* Home */,
+				D58BB9D32C42E4AD00703517 /* RootViewAppearance.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -206,6 +260,54 @@
 				D5BA36942C3E330200305778 /* CommonView */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		D58BB9A22C42765900703517 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				D58BB9A32C42766700703517 /* AppDelegate.swift */,
+				D58BB9A52C42768B00703517 /* SceneDelegate.swift */,
+				D58BB9A72C42778E00703517 /* AppEnvironment.swift */,
+				D58BB9AB2C4277FC00703517 /* PushNotificationHandler.swift */,
+				D58BB9AD2C42786200703517 /* DeepLinkHandler.swift */,
+				D58BB9C72C42C2E800703517 /* SystemEventHandler.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		D58BB9AF2C427F1800703517 /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				D58BB9B02C427F2800703517 /* DependencyInjector.swift */,
+				D58BB9B22C427F6100703517 /* AppState.swift */,
+				D58BB9B72C4280A700703517 /* InteractorsContainer.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		D58BB9B92C42859600703517 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D58BB9BA2C4285B100703517 /* ImageWebRepository.swift */,
+				D58BB9BC2C4285CB00703517 /* PushTokenRepository.swift */,
+				D58BB9BE2C42860200703517 /* WebRepository.swift */,
+				D58BB9CD2C42D80100703517 /* UserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D58BB9C02C42862600703517 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D58BB9C12C42864E00703517 /* APICall.swift */,
+				D58BB9C32C42C28B00703517 /* LazyList.swift */,
+				D58BB9C52C42C2C000703517 /* Store.swift */,
+				D58BB9C92C42C35E00703517 /* CancelBag.swift */,
+				D58BB9CF2C42DC1500703517 /* Loadable.swift */,
+				D58BB9D12C42DC7000703517 /* NetworkingHelpers.swift */,
+				D58BB9D52C42E4D900703517 /* Helpers.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D5B5FDE02C24529C00B03134 /* Home */ = {
@@ -270,6 +372,9 @@
 		D5BA36A02C3E839900305778 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D58BB9B52C42805A00703517 /* UserPermission.swift */,
+				D58BB9CB2C42C3ED00703517 /* ImagesService.swift */,
+				D58BB9DA2C443BD600703517 /* UserService.swift */,
 				D5BA36A12C3E83AA00305778 /* AuthService.swift */,
 			);
 			path = Services;
@@ -333,6 +438,11 @@
 		D5FBA8452C09C77200DB4DF8 /* SwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				D58BB9D72C43717600703517 /* Info.plist */,
+				D58BB9C02C42862600703517 /* Utilities */,
+				D58BB9B92C42859600703517 /* Repositories */,
+				D58BB9AF2C427F1800703517 /* Injected */,
+				D58BB9A22C42765900703517 /* System */,
 				D5BA36A02C3E839900305778 /* Services */,
 				D563303B2C2F163200C47219 /* Common */,
 				D513F2912C1D308100EFAFE7 /* Data */,
@@ -397,6 +507,10 @@
 			dependencies = (
 			);
 			name = SwiftUIApp;
+			packageProductDependencies = (
+				D58BB99B2C4229F200703517 /* EnvironmentOverrides */,
+				D58BB99E2C422F8100703517 /* SimpleKeychain */,
+			);
 			productName = WeatherApp;
 			productReference = D5FBA8432C09C77200DB4DF8 /* SwiftUIApp.app */;
 			productType = "com.apple.product-type.application";
@@ -472,6 +586,10 @@
 				Base,
 			);
 			mainGroup = D5FBA83A2C09C77200DB4DF8;
+			packageReferences = (
+				D58BB99A2C4229F200703517 /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */,
+				D58BB99D2C422F8100703517 /* XCRemoteSwiftPackageReference "SimpleKeychain" */,
+			);
 			productRefGroup = D5FBA8442C09C77200DB4DF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -618,27 +736,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B5FDDF2C24405400B03134 /* RegisterView.swift in Sources */,
+				D58BB9CC2C42C3ED00703517 /* ImagesService.swift in Sources */,
 				D5BA36B32C40474F00305778 /* SettingViewModel.swift in Sources */,
 				D5BA36982C3E34CA00305778 /* Endpoints.swift in Sources */,
 				D513F2972C1D349B00EFAFE7 /* UserDatasource.swift in Sources */,
+				D58BB9D42C42E4AD00703517 /* RootViewAppearance.swift in Sources */,
 				D5BA36AA2C3FBBF700305778 /* RootView.swift in Sources */,
 				D5BA36A22C3E83AA00305778 /* AuthService.swift in Sources */,
 				D523EE412C1C09B400C8E8BC /* LoginView.swift in Sources */,
+				D58BB9BF2C42860200703517 /* WebRepository.swift in Sources */,
 				D5BA369F2C3E568A00305778 /* AuthViewModel.swift in Sources */,
 				D5B5FDE22C2452AB00B03134 /* HomeView.swift in Sources */,
 				D5E644AE2C3329F300A19008 /* SettingView.swift in Sources */,
+				D58BB9BD2C4285CB00703517 /* PushTokenRepository.swift in Sources */,
 				D5A4B3CB2C3017060095B9C0 /* RegisterRequest.swift in Sources */,
 				D5BA36AC2C3FD4FD00305778 /* NetworkHelper.swift in Sources */,
+				D58BB9B32C427F6100703517 /* AppState.swift in Sources */,
+				D58BB9A42C42766700703517 /* AppDelegate.swift in Sources */,
 				D5E57F682C3C538400F2B44B /* DropDownButton.swift in Sources */,
 				D523EE472C1C155F00C8E8BC /* LoginRequest.swift in Sources */,
-				D5BA36B62C4173BF00305778 /* UserList.swift in Sources */,
+				D5BA36B62C4173BF00305778 /* UsersPerPage.swift in Sources */,
+				D58BB9A82C42778E00703517 /* AppEnvironment.swift in Sources */,
 				D5BA36AE2C3FF65000305778 /* UserResponse.swift in Sources */,
+				D58BB9D62C42E4D900703517 /* Helpers.swift in Sources */,
+				D58BB9D22C42DC7000703517 /* NetworkingHelpers.swift in Sources */,
+				D58BB9AE2C42786200703517 /* DeepLinkHandler.swift in Sources */,
 				D563303D2C2F166700C47219 /* RoundedButton.swift in Sources */,
+				D58BB9DB2C443BD600703517 /* UserService.swift in Sources */,
+				D58BB9C82C42C2E800703517 /* SystemEventHandler.swift in Sources */,
+				D58BB9BB2C4285B100703517 /* ImageWebRepository.swift in Sources */,
+				D58BB9CE2C42D80100703517 /* UserRepository.swift in Sources */,
+				D58BB9B62C42805A00703517 /* UserPermission.swift in Sources */,
 				D513F2902C1D2EF300EFAFE7 /* UserModel.swift in Sources */,
+				D58BB9A62C42768B00703517 /* SceneDelegate.swift in Sources */,
+				D58BB9C22C42864E00703517 /* APICall.swift in Sources */,
+				D58BB9B12C427F2800703517 /* DependencyInjector.swift in Sources */,
+				D58BB9B82C4280A700703517 /* InteractorsContainer.swift in Sources */,
 				D5FBA8472C09C77200DB4DF8 /* SwiftApp.swift in Sources */,
+				D58BB9C62C42C2C000703517 /* Store.swift in Sources */,
+				D58BB9C42C42C28B00703517 /* LazyList.swift in Sources */,
 				D520617B2C21772D00E490EA /* NetworkError.swift in Sources */,
+				D58BB9AC2C4277FC00703517 /* PushNotificationHandler.swift in Sources */,
 				D513F2942C1D33BE00EFAFE7 /* LoginResponse.swift in Sources */,
+				D58BB9D02C42DC1500703517 /* Loadable.swift in Sources */,
 				D5BA36B02C3FF67100305778 /* Role.swift in Sources */,
+				D58BB9CA2C42C35E00703517 /* CancelBag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,6 +942,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -829,6 +972,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -963,6 +1107,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D58BB99A2C4229F200703517 /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/EnvironmentOverrides";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+		D58BB99D2C422F8100703517 /* XCRemoteSwiftPackageReference "SimpleKeychain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/SimpleKeychain";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D58BB99B2C4229F200703517 /* EnvironmentOverrides */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58BB99A2C4229F200703517 /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */;
+			productName = EnvironmentOverrides;
+		};
+		D58BB99E2C422F8100703517 /* SimpleKeychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58BB99D2C422F8100703517 /* XCRemoteSwiftPackageReference "SimpleKeychain" */;
+			productName = SimpleKeychain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5FBA83B2C09C77200DB4DF8 /* Project object */;
 }
