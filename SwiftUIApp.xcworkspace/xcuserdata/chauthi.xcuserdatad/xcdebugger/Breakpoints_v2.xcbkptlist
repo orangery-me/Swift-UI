@@ -400,10 +400,72 @@
             filePath = "SwiftUIApp/Core/Setting/ViewModel/SettingViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "getUsers()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9D82B1B2-BC09-4B9E-9421-C2A09F096B11 - 1820f189fe9fc72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SwiftUIApp.SettingViewModel.getUsers() async -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Core/Setting/ViewModel/SettingViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  uuid = "9D82B1B2-BC09-4B9E-9421-C2A09F096B11 - b8cd0d14c95b8201"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for SwiftUIApp.SettingViewModel.getUsers() async -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Core/Setting/ViewModel/SettingViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "9D82B1B2-BC09-4B9E-9421-C2A09F096B11 - 14eba72c0580ac70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for SwiftUIApp.SettingViewModel.getUsers() async -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Core/Setting/ViewModel/SettingViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "9D82B1B2-BC09-4B9E-9421-C2A09F096B11 - 1003846011a71c4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;SwiftUIApp.UsersPerPage, SwiftUIApp.NetworkError&gt;) -&gt; () in SwiftUIApp.SettingViewModel.getUsers() async -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Core/Setting/ViewModel/SettingViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -451,6 +513,36 @@
                   endingLineNumber = "72"
                   offsetFromSymbolStart = "44">
                </Location>
+               <Location
+                  uuid = "9A0115E4-D440-4A70-BA0B-1792D75BEDAE - 4bf64df14780290d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIApp.UserDatasource.getUsers(completion: (Swift.Result&lt;SwiftUIApp.UsersPerPage, SwiftUIApp.NetworkError&gt;) -&gt; ()) async -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Data/Datasource/UserDatasource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "9A0115E4-D440-4A70-BA0B-1792D75BEDAE - 349d5354fd051336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SwiftUIApp.UserDatasource.getUsers(completion: (Swift.Result&lt;SwiftUIApp.UsersPerPage, SwiftUIApp.NetworkError&gt;) -&gt; ()) async -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Data/Datasource/UserDatasource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "52">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -464,9 +556,151 @@
             filePath = "SwiftUIApp/Common/Helper/NetworkHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "get(path:params:_:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "NetworkHelper"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "6A9F7EEF-E8C4-4A6E-9A0B-C03B0CEC19DC - 97c072f2c7e87a81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 1 of static SwiftUIApp.NetworkHelper.get(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, _: @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; ()) async throws -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Common/Helper/NetworkHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6A9F7EEF-E8C4-4A6E-9A0B-C03B0CEC19DC - c4d23151d0c0a155"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SwiftUIApp.NetworkHelper.get(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, _: @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; ()) async throws -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Common/Helper/NetworkHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "6A9F7EEF-E8C4-4A6E-9A0B-C03B0CEC19DC - aa718d0da325e677"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for static SwiftUIApp.NetworkHelper.get(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, _: @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; ()) async throws -&gt; ()"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Common/Helper/NetworkHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D5CD104-1394-4AEE-AF9E-8BFF2DE20684"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIApp/Core/Root/RootView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "RootView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "9D5CD104-1394-4AEE-AF9E-8BFF2DE20684 - a5df5969c75ccb33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIApp.RootView.authService.getter : SwiftUIApp.AuthService"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Core/Root/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "9D5CD104-1394-4AEE-AF9E-8BFF2DE20684 - 37299ee2de821510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIApp.RootView.$authService.getter : SwiftUI.EnvironmentObject&lt;SwiftUIApp.AuthService&gt;.Wrapper"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Core/Root/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "9D5CD104-1394-4AEE-AF9E-8BFF2DE20684 - 2dd41b8e06fbdcb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIApp.RootView.init(authService: SwiftUI.EnvironmentObject&lt;SwiftUIApp.AuthService&gt;, viewModel: SwiftUIApp.RootView.ViewModel) -&gt; SwiftUIApp.RootView"
+                  moduleName = "SwiftUIApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chauthi/Documents/Products/Swift/SwiftUI/SwiftUIApp/Core/Root/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF0F1355-31F1-42BD-A55F-70C17750CAD0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIApp/System/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD7F3D54-CF76-44B4-9DA3-980B08B7742C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIApp/System/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "scene(_:willConnectTo:options:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
